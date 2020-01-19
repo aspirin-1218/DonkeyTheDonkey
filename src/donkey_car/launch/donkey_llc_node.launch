@@ -1,0 +1,8 @@
+<launch>
+<include file="$(find i2cpwm_board)/launch/i2cpwm_node.launch"/>
+<include file="$(find ps4control)/launch/console_control_node.launch"/>
+<!--machine name="frank" address="192.168.0.4" env-loader="/home/frank/Documents/catkin_ws/devel/env.sh" /-->
+<machine name="ubuntu" address="192.168.0.24" env-loader="/home/ubuntu/catkin_ws/devel/env.sh" />
+<node pkg="donkey_car" name = "donkey_llc" type="low_level_control.py" output="screen" />
+<!--node machine="frank" pkg="ps4control" name = "console_control" type="PS4_ConsoleControl.py" output="screen" /-->
+</launch>

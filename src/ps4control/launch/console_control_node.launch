@@ -1,0 +1,3 @@
+<launch>
+<node pkg="ps4control" name="console_control" type="PS4_ConsoleControl.py" output="screen" />
+</launch>
